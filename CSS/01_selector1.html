@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-선택자</title>
+  <style>
+    /* 전체선택자(*) - 모든 html 태그에 적용 */
+    * { color: gray; }
+
+    /* 태그선택자 - html엘리먼트 문서 공통적으로 적용 */
+    p { font-family: 'Times New Roman', Times, serif; }
+    h1 { text-decoration: underline overline; }
+
+    /* 아이디 선택자(#) - 문서당 1개만 사용 */
+    #container { width: 800px; margin: auto; }
+
+    /* 클라스 선택자(.) - 반복 사용 */
+    .sky { color: skyblue ;}
+    .back { background-color: lightsalmon; }
+
+    section.dashline {
+      /* border: 2px dashed darkolivegreen; */
+      border-width: 2px;
+      border-style: dashed;
+      border-color: darkolivegreen;
+    }
+    /* section태그에 적용한 클라스 dashline -중간에 여백❌ */
+
+    li. lines {
+      text-decoration: underline overline line-through;
+    }
+    /* 자손(후손) 선택자 - 부모 엘리먼트 아래(하위레벨, 하위 depth)에 적용(중간에 여백) */
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>기본선택자</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat, orci dignissim dictum bibendum, lorem ipsum iaculis felis, vel vehicula ante quam eget elit. <strong class="sky back">Nullam imperdiet, massa et porta posuere, eros nibh fermentum velit, eu fermentum turpis lorem vel quam.</strong> Donec non accumsan metus, nec hendrerit diam. Nam eget commodo dui. Pellentesque imperdiet eu turpis a mattis. Fusce et tempus mauris. Praesent commodo massa vel ligula fringilla, et lobortis lacus cursus. Mauris ornare dignissim facilisis.
+      Nam malesuada mauris sagittis, finibus justo ac, tincidunt dolor. Proin malesuada gravida dignissim. Vivamus vel justo tempus, dictum justo tincidunt, mattis augue. Nullam sit amet feugiat urna. Donec feugiat nisl non ligula porttitor, id tincidunt ante rhoncus. Phasellus faucibus tempus justo, et mattis tortor. Morbi a massa dolor. Morbi placerat urna ac velit sodales, at pellentesque ligula varius. Aliquam placerat lorem augue.
+    </p>
+    <ul>
+      <li class="dashline lines">Lorem ipsum dolor sit amet</li>
+      <li class="lines">Lorem ipsum <span class="lines">dolor sit amet</span></li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li class="sky back">Lorem ipsum dolor sit amet</li>
+    </ul>
+
+    <p class="sky lines">
+      Nam malesuada mauris sagittis, finibus justo ac, tincidunt dolor. Proin malesuada gravida dignissim. Vivamus vel justo tempus, dictum justo tincidunt, <span class="sky">mattis augue. Nullam sit amet feugiat urna. Donec feugiat nisl non ligula porttitor, id tincidunt ante rhoncus.</span > Phasellus faucibus tempus justo, et mattis tortor. <strong class="lines">Morbi a massa dolor.</strong> Morbi placerat urna ac velit sodales, at pellentesque ligula varius. Aliquam placerat lorem augue.
+    </p>
+    <section class="dashline">
+      Nam malesuada mauris sagittis, finibus justo ac, tincidunt dolor. Proin malesuada gravida dignissim. Vivamus vel justo tempus, dictum justo tincidunt, mattis augue. Nullam sit amet feugiat urna. Donec feugiat nisl non ligula porttitor, id tincidunt ante rhoncus. Phasellus faucibus tempus justo, et mattis tortor. Morbi a massa dolor. Morbi placerat urna ac velit sodales, at pellentesque ligula varius. Aliquam placerat lorem augue.
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자의 우선권</title>
+  <style>
+    body { color: red; }
+    ul { color: #ccc; }
+
+    #bbb { color: blue; }
+    .aaa { color: #111; }
+
+    li { color:yellow }
+    li { color: crimson }
+
+    li span { color: skyblue; }
+    span { color: violet; }
+
+    li:nth-child(4) { background: lightpink; }
+    li:last-child span { color: red !important; } /* !important를 붙여주면, 클라스나 자세한것 적용보다, 기본 규칙을 어긋나서 최우선 순위가 된다. 사용자제*/
+    .aaa li:last-child span { color: green; }
+    
+  </style>
+</head>
+<body>
+  <ul class="aaa" id="bbb">
+    <li><span>Lorem ipsum dolor sit amet</span></li>
+    <li><span>Lorem ipsum dolor sit amet</span></li>
+    <li><span style="color:darkblue">Lorem ipsum dolor sit amet</span></li>
+    <li><span>Lorem ipsum dolor sit amet</span></li>
+    <li><span>Lorem ipsum dolor sit amet</span></li>
+  </ul>
+
+  <div> <!--위의 ul과 형제관계-->
+    <h3>선택자의 우선순위</h3>
+    - 가까운 부분에 선언 (body보다 ul우선)<br>
+    - tag선택자보다 class가 우선<br>
+    - class보다 id가 우선<br>
+    - 나중에 로딩되는 선택자가 우선<br>
+    - 상세하게 나열된 선택자가 우선<br>
+    - inline 방식으로 적용한 css가 우선<br>
+    - !important를 붙여주면 최우선 순위(사용자제)
+  </div>
+</body>
+</html>

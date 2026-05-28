@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배경이미지2</title>
+  <style>
+    body { 
+      /* background-color: #e4c3c9;
+      background-image: url('img/flower.png');
+      background-repeat: repeat-x;
+      background-size: 220px auto;
+      background-position: 0 70px;
+      background-attachment: fixed; */
+
+      background: #e4c3c9 url('img/flower.png') repeat-x fixed 0 70px / 220px auto ;
+
+      /*
+        - 숫자가 1개만 나올땐 무조건 위치로 인식
+        - 크기를 지정할때는 위치(position) / 크기(size)
+        - 축약형 나열 순서는 상관 ❌
+      */
+    }
+
+    #content {
+      width: 600px; margin: 200px auto; padding: 50px ;
+      background: url('img/dot.png') rgba(255,255,255,.5);
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur nisi a neque mattis molestie. Curabitur pulvinar viverra ultricies. Etiam odio mauris, suscipit in quam quis, mollis convallis elit. Suspendisse sollicitudin sem arcu, quis viverra odio auctor a. Aliquam quis viverra nisl. Quisque sit amet blandit massa. Nulla id condimentum dolor, eget ullamcorper est. Curabitur a ante nulla. Donec urna ex, eleifend sit amet iaculis tempor, venenatis nec sapien. Pellentesque efficitur vestibulum lacus et laoreet. Quisque lorem ipsum, fermentum id urna ut, blandit pharetra magna.</p>
+    <p>Sed vitae mauris leo. Fusce id vehicula arcu. Praesent at condimentum enim. Etiam vel scelerisque sapien. Nulla bibendum, nulla at finibus finibus, metus ipsum mollis metus, id iaculis tellus elit ac libero. Suspendisse vel purus ipsum. Mauris commodo arcu vitae elit varius, sit amet eleifend erat rutrum. Proin dapibus, augue ac lobortis accumsan, erat turpis ornare quam, ut lobortis purus neque sed ex.</p>
+    <p>Nam consectetur urna a nisi tempus vestibulum. Sed in turpis dapibus, mollis ante sit amet, imperdiet dolor. Nunc lobortis egestas ligula, at lobortis sem cursus eget. Vestibulum eget augue tortor. Donec sit amet malesuada ex. Vivamus fermentum lorem massa, in euismod lectus pretium vel. Morbi eu finibus neque. Donec finibus, est at bibendum blandit, ligula orci imperdiet mi, non condimentum dui neque ut augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum et tellus nec augue rutrum consectetur. Pellentesque a rhoncus justo, vel egestas purus. Sed bibendum convallis vulputate. Morbi tempor nisi eget leo rhoncus, et pellentesque tellus laoreet. Suspendisse gravida varius vulputate.</p>
+    <p>Nunc accumsan nibh elit, id commodo urna scelerisque eget. Suspendisse potenti. Pellentesque velit sem, fringilla in tortor at, fermentum vehicula elit. Aenean commodo cursus commodo. Praesent libero augue, consectetur fringilla lacus eu, volutpat auctor nisl. Sed consectetur eros at tristique cursus. Nunc sit amet efficitur lacus. Aliquam at aliquet magna. Quisque sollicitudin justo ut orci pharetra, ac posuere augue sagittis. Nunc auctor lacus purus, id luctus mi porttitor ac. Duis vulputate orci at lorem suscipit elementum. Ut sollicitudin turpis quis iaculis molestie. Proin quis dapibus urna, non pretium neque. Aliquam luctus sodales convallis. Vestibulum porttitor diam ac efficitur aliquet. Vestibulum eu malesuada leo.</p>
+    <p>Proin varius, arcu sed feugiat commodo, lacus arcu tempor ipsum, id hendrerit arcu dolor id massa. Duis ac posuere ligula, a finibus tellus. Aliquam quis facilisis nisl, scelerisque vehicula mi. Sed in enim dapibus, tristique erat eu, facilisis orci. Donec ultricies ultrices orci, eget lacinia arcu sagittis in. Vivamus iaculis ante vel tincidunt aliquet. Nunc eget ligula a nisl suscipit dignissim id vel tortor. Aenean fringilla ultricies metus, ultrices feugiat ligula rutrum at. Cras et ultrices justo, eget pretium urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean mollis nibh eu metus ultricies, id maximus ipsum pellentesque. Integer aliquam at massa ac facilisis.</p>
+  </div>
+</body>
+</html>
